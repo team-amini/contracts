@@ -2,15 +2,12 @@ pragma solidity ^0.4.2;
 
 contract Regulated {
 
-  struct MetaData {
-    bytes metaData     
-  }
-
   event RegulatedTransaction(
-    address indexed _from;
-    address index _to;
-    address index _amount;
-    RegulatedData _meta;
+    address indexed _security,
+    address indexed _from,
+    address indexed _to,
+    uint _amount,
+    bytes _meta
   );
 
 }
